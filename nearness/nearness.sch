@@ -513,17 +513,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 1600 5600 1600
 $Comp
-L Amplifier_Operational:LM321 U3
-U 1 1 66A891EB
-P 6550 1700
-F 0 "U3" H 6894 1746 50  0000 L CNN
-F 1 "LM321" H 6894 1655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6550 1700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 6550 1700 50  0001 C CNN
-	1    6550 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R32
 U 1 1 66A8C282
 P 6600 1350
@@ -547,7 +536,6 @@ Wire Wire Line
 Connection ~ 4950 2250
 Wire Wire Line
 	6850 1700 7300 1700
-Connection ~ 6850 1700
 $Comp
 L Device:R R34
 U 1 1 66A941E6
@@ -574,7 +562,6 @@ F 3 "~" H 6100 1600 50  0001 C CNN
 	1    6100 1600
 	0    1    1    0   
 $EndComp
-Connection ~ 6250 1600
 Wire Wire Line
 	4950 1150 4950 1500
 $Comp
@@ -589,25 +576,14 @@ F 3 "~" H 5450 1150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Amplifier_Operational:LM321 U1
-U 1 1 66B3EE91
-P 5250 1600
-F 0 "U1" H 5594 1646 50  0000 L CNN
-F 1 "LM321" H 5594 1555 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5250 1600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 5250 1600 50  0001 C CNN
-	1    5250 1600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C3
 U 1 1 66B8B1A8
-P 5000 950
-F 0 "C3" V 4748 950 50  0000 C CNN
-F 1 "100n" V 4839 950 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 5038 800 50  0001 C CNN
-F 3 "~" H 5000 950 50  0001 C CNN
-	1    5000 950 
+P 6500 2750
+F 0 "C3" V 6248 2750 50  0000 C CNN
+F 1 "100n" V 6339 2750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6538 2600 50  0001 C CNN
+F 3 "~" H 6500 2750 50  0001 C CNN
+	1    6500 2750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -625,17 +601,6 @@ F 3 "~" H 4850 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5600 4350 6000 4350
-$Comp
-L Amplifier_Operational:LM321 U4
-U 1 1 66BE935B
-P 6600 4450
-F 0 "U4" H 6944 4496 50  0000 L CNN
-F 1 "LM321" H 6944 4405 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6600 4450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 6600 4450 50  0001 C CNN
-	1    6600 4450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R33
 U 1 1 66BE9361
@@ -657,7 +622,6 @@ Wire Wire Line
 	6300 5000 6300 4550
 Wire Wire Line
 	6900 4450 7350 4450
-Connection ~ 6900 4450
 $Comp
 L Device:R R35
 U 1 1 66BE936F
@@ -684,10 +648,8 @@ F 3 "~" H 6150 4350 50  0001 C CNN
 	1    6150 4350
 	0    1    1    0   
 $EndComp
-Connection ~ 6300 4350
 Wire Wire Line
 	5000 3900 5000 4250
-Connection ~ 5600 4350
 $Comp
 L Device:R R29
 U 1 1 66BE9381
@@ -699,24 +661,8 @@ F 3 "~" H 5450 3900 50  0001 C CNN
 	1    5450 3900
 	0    1    1    0   
 $EndComp
-$Comp
-L Amplifier_Operational:LM321 U2
-U 1 1 66BE9387
-P 5300 4350
-F 0 "U2" H 5644 4396 50  0000 L CNN
-F 1 "LM321" H 5644 4305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5300 4350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm321.pdf" H 5300 4350 50  0001 C CNN
-	1    5300 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 4350 5600 4400
 Wire Wire Line
 	5000 3900 5300 3900
-Connection ~ 5300 3900
-Wire Wire Line
-	5300 3900 5350 3900
 Wire Wire Line
 	5000 4450 5000 5000
 Wire Wire Line
@@ -730,13 +676,6 @@ Wire Wire Line
 Connection ~ 5000 5000
 Wire Wire Line
 	4850 3300 4850 5000
-Connection ~ 5000 4250
-NoConn ~ 6450 1400
-NoConn ~ 6450 2000
-NoConn ~ 5200 4050
-NoConn ~ 5200 4650
-NoConn ~ 6500 4750
-NoConn ~ 6500 4150
 Wire Wire Line
 	4000 4250 4700 4250
 Text GLabel 1800 4550 2    50   Input ~ 0
@@ -745,29 +684,26 @@ Text GLabel 1800 4650 2    50   Input ~ 0
 GND
 Text GLabel 4550 3000 0    50   Input ~ 0
 +5V
-Text GLabel 5150 950  2    50   Input ~ 0
+Text GLabel 6650 2750 2    50   Input ~ 0
 +5V
 Text GLabel 5400 3000 2    50   Input ~ 0
 GND
-Text GLabel 4850 950  0    50   Input ~ 0
+Text GLabel 6350 2750 0    50   Input ~ 0
 GND
-Text GLabel 5150 1900 2    50   Input ~ 0
+Text GLabel 6650 3350 2    50   Input ~ 0
 GND
 Wire Wire Line
 	4950 1150 5300 1150
-Wire Wire Line
-	5150 950  5150 1300
 Wire Wire Line
 	5600 1150 5600 1600
 Connection ~ 5600 1600
 Wire Wire Line
 	5600 1600 5950 1600
-Connection ~ 4950 1500
 $Comp
-L Connector_Generic:Conn_01x09 IO
+L Connector_Generic:Conn_01x09 IO1
 U 1 1 66E6359D
 P 1700 2700
-F 0 "IO" H 1618 3317 50  0000 C CNN
+F 0 "IO1" H 1618 3317 50  0000 C CNN
 F 1 "Conn_01x09" H 1618 3226 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 1700 2700 50  0001 C CNN
 F 3 "~" H 1700 2700 50  0001 C CNN
@@ -787,10 +723,10 @@ OutR
 Wire Wire Line
 	1900 3100 1900 3350
 $Comp
-L Connector_Generic:Conn_02x05_Counter_Clockwise Bus
+L Connector_Generic:Conn_02x05_Counter_Clockwise Bus1
 U 1 1 66EBFA85
 P 1500 4750
-F 0 "Bus" H 1550 5167 50  0000 C CNN
+F 0 "Bus1" H 1550 5167 50  0000 C CNN
 F 1 "Conn_02x05_Counter_Clockwise" H 1550 5076 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1500 4750 50  0001 C CNN
 F 3 "~" H 1500 4750 50  0001 C CNN
@@ -807,4 +743,66 @@ NoConn ~ 1300 4950
 NoConn ~ 1800 4950
 NoConn ~ 1800 4850
 NoConn ~ 1800 4750
+$Comp
+L Amplifier_Operational:LM324 U1
+U 1 1 66EF7340
+P 5250 1600
+F 0 "U1" H 5250 1967 50  0000 C CNN
+F 1 "LM324" H 5250 1876 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5200 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 5300 1800 50  0001 C CNN
+	1    5250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U1
+U 2 1 66EF9DDC
+P 6550 1700
+F 0 "U1" H 6550 2067 50  0000 C CNN
+F 1 "LM324" H 6550 1976 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6500 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6600 1900 50  0001 C CNN
+	2    6550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U1
+U 3 1 66EFB747
+P 5300 4350
+F 0 "U1" H 5300 4717 50  0000 C CNN
+F 1 "LM324" H 5300 4626 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5250 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 5350 4550 50  0001 C CNN
+	3    5300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U1
+U 4 1 66EFC94A
+P 6600 4450
+F 0 "U1" H 6600 4817 50  0000 C CNN
+F 1 "LM324" H 6600 4726 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6550 4550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6650 4650 50  0001 C CNN
+	4    6600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM324 U1
+U 5 1 66EFDD6D
+P 6750 3050
+F 0 "U1" H 6708 3096 50  0000 L CNN
+F 1 "LM324" H 6708 3005 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6700 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6800 3250 50  0001 C CNN
+	5    6750 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 1500
+Connection ~ 6250 1600
+Connection ~ 6850 1700
+Connection ~ 5000 4250
+Connection ~ 5600 4350
+Connection ~ 6300 4350
+Connection ~ 6900 4450
 $EndSCHEMATC
