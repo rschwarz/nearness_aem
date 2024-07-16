@@ -678,10 +678,6 @@ Wire Wire Line
 	4850 3300 4850 5000
 Wire Wire Line
 	4000 4250 4700 4250
-Text GLabel 1800 4550 2    50   Input ~ 0
-+5V
-Text GLabel 1800 4650 2    50   Input ~ 0
-GND
 Text GLabel 4550 3000 0    50   Input ~ 0
 +5V
 Text GLabel 6650 2750 2    50   Input ~ 0
@@ -805,4 +801,6 @@ Connection ~ 5000 4250
 Connection ~ 5600 4350
 Connection ~ 6300 4350
 Connection ~ 6900 4450
+NoConn ~ 1800 4550
+NoConn ~ 1800 4650
 $EndSCHEMATC
