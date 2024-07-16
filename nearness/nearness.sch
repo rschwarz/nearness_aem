@@ -14,28 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x07 Inputs1
-U 1 1 66967850
-P 1700 2700
-F 0 "Inputs1" H 1618 3217 50  0000 C CNN
-F 1 "Conn_01x07" H 1618 3126 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Horizontal" H 1700 2700 50  0001 C CNN
-F 3 "~" H 1700 2700 50  0001 C CNN
-	1    1700 2700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 Outputs1
-U 1 1 6696855D
-P 8450 2200
-F 0 "Outputs1" H 8530 2192 50  0000 L CNN
-F 1 "Conn_01x02" H 8530 2101 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" H 8450 2200 50  0001 C CNN
-F 3 "~" H 8450 2200 50  0001 C CNN
-	1    8450 2200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R6
 U 1 1 6696924F
 P 2900 1650
@@ -569,10 +547,6 @@ Wire Wire Line
 Connection ~ 4950 2250
 Wire Wire Line
 	6850 1700 7300 1700
-Wire Wire Line
-	8050 1700 8050 2200
-Wire Wire Line
-	8050 2200 8250 2200
 Connection ~ 6850 1700
 $Comp
 L Device:R R34
@@ -585,8 +559,6 @@ F 3 "~" H 7450 1700 50  0001 C CNN
 	1    7450 1700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7600 1700 8050 1700
 Wire Wire Line
 	6850 1350 6850 1700
 Wire Wire Line
@@ -698,8 +670,6 @@ F 3 "~" H 7500 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7650 4450 8100 4450
-Wire Wire Line
 	6900 4100 6900 4450
 Wire Wire Line
 	6300 4100 6300 4350
@@ -759,10 +729,6 @@ Wire Wire Line
 	4950 3300 4950 3000
 Connection ~ 5000 5000
 Wire Wire Line
-	8100 4450 8100 2300
-Wire Wire Line
-	8100 2300 8250 2300
-Wire Wire Line
 	4850 3300 4850 5000
 Connection ~ 5000 4250
 NoConn ~ 6450 1400
@@ -773,20 +739,9 @@ NoConn ~ 6500 4750
 NoConn ~ 6500 4150
 Wire Wire Line
 	4000 4250 4700 4250
-$Comp
-L Connector_Generic:Conn_01x02 Bus1
-U 1 1 66CC8D90
-P 1800 4550
-F 0 "Bus1" H 1718 4767 50  0000 C CNN
-F 1 "Conn_01x02" H 1718 4676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" H 1800 4550 50  0001 C CNN
-F 3 "~" H 1800 4550 50  0001 C CNN
-	1    1800 4550
-	-1   0    0    -1  
-$EndComp
-Text GLabel 2000 4550 2    50   Input ~ 0
+Text GLabel 1800 4550 2    50   Input ~ 0
 +5V
-Text GLabel 2000 4650 2    50   Input ~ 0
+Text GLabel 1800 4650 2    50   Input ~ 0
 GND
 Text GLabel 4550 3000 0    50   Input ~ 0
 +5V
@@ -808,4 +763,48 @@ Connection ~ 5600 1600
 Wire Wire Line
 	5600 1600 5950 1600
 Connection ~ 4950 1500
+$Comp
+L Connector_Generic:Conn_01x09 IO
+U 1 1 66E6359D
+P 1700 2700
+F 0 "IO" H 1618 3317 50  0000 C CNN
+F 1 "Conn_01x09" H 1618 3226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 1700 2700 50  0001 C CNN
+F 3 "~" H 1700 2700 50  0001 C CNN
+	1    1700 2700
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7600 1700 2    50   Input ~ 0
+OutL
+Text GLabel 1900 1850 1    50   Input ~ 0
+OutL
+Wire Wire Line
+	1900 1850 1900 2300
+Text GLabel 7650 4450 2    50   Input ~ 0
+OutR
+Text GLabel 1900 3350 3    50   Input ~ 0
+OutR
+Wire Wire Line
+	1900 3100 1900 3350
+$Comp
+L Connector_Generic:Conn_02x05_Counter_Clockwise Bus
+U 1 1 66EBFA85
+P 1500 4750
+F 0 "Bus" H 1550 5167 50  0000 C CNN
+F 1 "Conn_02x05_Counter_Clockwise" H 1550 5076 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1500 4750 50  0001 C CNN
+F 3 "~" H 1500 4750 50  0001 C CNN
+	1    1500 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 1300 4550 0    50   Input ~ 0
++5V
+Text GLabel 1300 4650 0    50   Input ~ 0
+GND
+NoConn ~ 1300 4750
+NoConn ~ 1300 4850
+NoConn ~ 1300 4950
+NoConn ~ 1800 4950
+NoConn ~ 1800 4850
+NoConn ~ 1800 4750
 $EndSCHEMATC
