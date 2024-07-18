@@ -748,7 +748,7 @@ F 1 "LM324" H 5250 1876 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 5200 1700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 5300 1800 50  0001 C CNN
 	1    5250 1600
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:LM324 U1
@@ -759,7 +759,7 @@ F 1 "LM324" H 6550 1976 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 6500 1800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6600 1900 50  0001 C CNN
 	2    6550 1700
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:LM324 U1
@@ -770,7 +770,7 @@ F 1 "LM324" H 5300 4626 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 5250 4450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 5350 4550 50  0001 C CNN
 	3    5300 4350
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:LM324 U1
@@ -781,7 +781,7 @@ F 1 "LM324" H 6600 4726 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 6550 4550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 6650 4650 50  0001 C CNN
 	4    6600 4450
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:LM324 U1
